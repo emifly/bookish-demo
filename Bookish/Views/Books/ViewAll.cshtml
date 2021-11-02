@@ -1,0 +1,15 @@
+﻿@model Bookish.Models.View.BooksViewModel
+@{
+    ViewData["Title"] = "View All Books";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Here are all our books</h1>
+    
+    @{
+        foreach (var book in Model.Books)
+        {
+            <p>Book @book.Id</p>
+        }
+    }
+</div>
